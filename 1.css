@@ -1,0 +1,306 @@
+<style>
+
+body {
+font-family: Verdana, sans-serif;
+font-size: 20px; 
+margin: 0;
+padding: 0;
+color: #2B3140;
+}
+
+/*Меню с фиксацией по горизонтали*/
+	
+nav ul li {
+	display: inline-block;
+	}
+nav a {
+	display: block;
+	padding: 0 40px;
+	font-size: 16px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #EDEEEE;
+}
+nav a:hover { 
+    text-decoration: underline;
+	color: #AFD275;
+ 
+}
+
+
+/* полоска с заголовком Н1 */
+.header {
+background-color: #2B3140; 
+color: #ffffff;
+text-align: center;
+padding: 10px; /* ширина полоски */
+font-family: Verdana, sans-serif;
+font-size: 20px; 
+}
+
+.footer {
+background-color: #7E685A;
+color: #2B3140;
+text-align: center;
+padding: 10px; /* ширина полоски */
+font-family: Verdana, sans-serif;
+font-size: 20px; 
+}
+
+
+p {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 5px;
+  margin-right: 15px;
+  padding-top: 10px;
+  color: #2B3140;
+}
+
+h1 {
+ 
+  font-size: 27px;
+  text-align: center;
+  font-family: Verdana;
+  color: #2B3140;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Verdana, sans-serif;
+  color: #2B3140;
+}
+
+.zag {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: Verdana, sans-serif;
+  color: #2B3140;
+  height: 30px;
+  
+}
+
+section {
+        display: flex; /*каждый flex-элемент будет занимать одинаковое количество места в flex-контейнере*/
+      }
+article {
+        padding: 10px;
+        margin: 10px;
+        background: #AFD275;
+		border-radius: 20% 2%;  /*закругляшки*/
+      }
+	  
+.container {
+box-sizing: border-box;
+/*border: solid #5B6DCD 10px;/* рамка для проверки */ 
+width: 100%; /* Относительная ширина контейнера */ 
+height: 100%; /* Относительная высота контейнера */ 
+margin: 0 auto; /* Центрирование */
+background-color: #f0f0f0;
+padding: 0px; /* узость - отступы контента контейнера слева и справа */
+padding-bottom: 10px;
+}
+
+.content {
+padding: 10px;
+color: #2B3140;
+}
+
+@media screen and (max-width: 768px) { /* Медиа-запрос для адаптации на мобильных устройствах */
+
+.container {
+width: 100%; /* Уменьшение ширины контейнера */
+}
+}
+
+
+/*слайдер*/
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.slider {
+   width: 800px;
+   height: 500px;
+   /*margin-top: 880px; отступ слайдера */
+   overflow: hidden; /*поведение, когда содержимое не помещается в поле заполнения элемента (переполняется) в горизонтальном и/или вертикальном направлении.*/
+   border: 10px solid #cccdce;
+}
+
+.middle {
+   position: static; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
+   top: 5%;
+   left: 0%;
+   margin-top: 10px;
+   transform: translate(-0%, -0%); /* позволяет поворачивать, масштабировать, наклонять или переводить элемент. translate -  */
+   width: 50%; /* Относительная ширина контейнера */
+   height: 50%;
+   margin: 0 auto; /* Центрирование */
+}
+
+.navigation {
+   position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
+   bottom: 16px; /* участвует в установке вертикального положения позиционируемого элемента. */
+   left: 50%;
+   transform: translateX(-50%); /* перемещает элемент горизонтально в 2D-плоскости - влево + вправо 0 не перемещает. */
+   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
+   
+}
+
+
+.bar {
+   width: 50px;
+   height: 8px;
+   margin: 6px;
+   cursor: pointer; /*Курсор — это указатель, который указывает на ссылку. Как правило, изображение указывающей руки.*/
+   background-color: #000;
+   opacity: .5;  /*задает непрозрачность элемента */
+  border-radius: 5px;  /*округляет углы внешнего края границы элемента */
+  transition: all 0.4s ease;  /* задержка в ...., прежде чем произойдет...*/
+}
+
+.bar:hover {
+   opacity: 1; /*задает непрозрачность элемента */
+   transform:scale(1.1); /* растягивает по горизонтали + по вертикали*/
+   
+}
+
+input[name="r"] { 
+   position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
+   visibility: hidden; /*скрывает элемент без изменения макета документа*/
+}
+
+.slides {
+   width: 400%; /* Увеличение размера фото*/
+   height: 100%; /* Увеличение размера фото*/
+   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
+}
+
+.slide {
+   width: 25%;
+   transition: all 0.6s ease;
+}
+
+.img { 
+   width: 100%; /* сжатие размера каждого фото отностительно рамки*/
+   height: 100%; /* сжатие размера каждого фото отностительно рамки*/
+}
+
+#r1:checked ~ .s1 {
+   margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+   margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+   margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+   margin-left: -75%; 
+
+}
+
+
+
+.content-box {
+  column-gap: 100px; /*расстояние между столбцами*/
+  column-count: 3; /*количество столбцов*/
+  column-rule: dotted 4px #AFD275; /*точки, толщина, цвет*/
+  padding-left: 10px;
+  padding-right: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #2B3140; 
+  width: 90%; margin: 0 auto;
+}
+
+
+.text {
+  color: #2B3140;
+  font-size: 25px;
+  column-span: 1;
+  /*column-span: all;*/
+  background-color: #AFD275;
+  color: #2B3140;
+  padding: 10px;
+  text-align: left;
+}
+
+.text1 {
+  margin-top: 10px;
+}
+
+
+
+.text-content {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.markers li::marker {
+	color: #AFD275;
+	font-size: 20px;
+	color: #2B3140;
+	
+}
+.txt {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20px;
+  color: #2B3140;
+  
+}
+
+.ul-txt {
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+/* ЦЕНТРИРОВАНИЕ ТАБЛИЦЫ */
+
+.container-table {
+width: 65%; /* Относительная ширина контейнера */ 
+margin: 0 auto; /* Центрирование */
+padding-bottom: 10px;
+}
+
+
+
+.table {
+  width: 950px;
+  border: solid 1px #adadad;
+  font-size: 20px;
+  border-style: none;
+  border-collapse: collapse;
+
+}
+
+
+
+
+.th  {
+  border: solid 1px #adadad; 
+  
+}
+
+
+.td  {
+border: solid 1px #adadad;
+}
+
+</style>
