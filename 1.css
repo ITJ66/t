@@ -90,7 +90,22 @@ h3 {
   height: 30px;
 }
 
+.listik {
+margin-left: 10px;  
+margin-right: 10px; 
+margin-top: 10px; 
+margin-bottom: 30px;	
+	
+}	
 
+.zag-table {
+
+border: solid 1px #adadad; 
+background-color: #C2B9B0; 
+text-align: center;
+
+}	
+	
 .zag {
   text-align: center;
   margin-top: 30px;
@@ -101,6 +116,12 @@ h3 {
   height: 30px;
   
 }
+
+.menu {
+font-size: 16px; 
+padding-right: 40px;
+}
+
 
 section {
         display: flex; /*каждый flex-элемент будет занимать одинаковое количество места в flex-контейнере*/
