@@ -4,6 +4,7 @@ body {
   margin: 0;
   align-items: center;
   justify-content: center;
+  
 }
 
 .header {
@@ -19,20 +20,34 @@ font-size: 20px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+  
 }
 
-.centrirovanie {
+.centrirovanie{
 display: flex;
 width: 98%;
 justify-content: center;
 align-items: center;
 margin-top: 0px;
+
 }
+
+.article {
+        padding: 10px;
+        margin: 10px;
+		height: 160px;
+		max-width: 400px; 
+        background: #AFD275;
+		border-radius: 20% 2%;  /*закругляшки*/
+      }
 
 .containerH {
   display: flex;
   width: 98%;
   flex-wrap: wrap;
+  /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+  
 }
 
 .centrirovanieH {
@@ -41,6 +56,8 @@ width: 98%;
 justify-content: center;
 align-items: center;
 }
+
+
 
 .th1 {
   color: #2B3140;
@@ -60,9 +77,10 @@ text-align: left;
 .container1 {
   display: flex;
   flex-wrap: wrap;
+  /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+  
 }
-
-.centrirovanie1 {
+.centrirovanie1{
 display: flex;
 justify-content: left;
 align-items: left;
@@ -71,9 +89,10 @@ align-items: left;
 .container2 {
   display: flex;
   flex-wrap: wrap;
+  /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+  
 }
-
-.centrirovanie2 {
+.centrirovanie2{
 display: flex;
 justify-content: left;
 align-items: left;
@@ -82,9 +101,10 @@ align-items: left;
 .container3 {
   display: flex;
   flex-wrap: wrap;
+  /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+  
 }
-
-.centrirovanie3 {
+.centrirovanie3{
 display: flex;
 justify-content: left;
 align-items: left;
@@ -98,7 +118,6 @@ flex-wrap: wrap;
 }
 
 .table1 {
-  margin: 0 auto; /* Центрирование */
   width: auto;
   border-style: none;
   border-collapse: collapse;
@@ -115,6 +134,7 @@ width: 98%;
 font-family: Verdana, sans-serif;
 font-size: 20px; 
 }
+
 
 p {
   text-align: left;
@@ -147,7 +167,9 @@ li {
   text-align: left;
   margin-left: 5px;
   margin-right: 15px;
+  
   color: #2B3140;
+ 
 }
 
 /*Меню с фиксацией по горизонтали*/
@@ -166,25 +188,16 @@ nav a {
 nav a:hover { 
     text-decoration: underline;
 	color: #AFD275;
+ 
 }
-
-
-.article {
-        padding: 10px;
-        margin: 10px;
-	height: 130px;
-	max-width: 400px; 
-        background: #AFD275;
-	border-radius: 20% 2%;  /*закругляшки*/
-      }
 	  
 .article1 {
-	margin-bottom: 18px;
+	    margin-bottom: 18px;
         padding: 10px;
-	max-width: 400px; 	
-	border-radius: 20% 2%;  /*закругляшки*/
-	vertical-align: top;
-	height: 350px;
+		max-width: 400px; 	
+	    border-radius: 20% 2%;  /*закругляшки*/
+		vertical-align: top;
+		height: 350px;
       }
 
 .aside, .main {
@@ -197,7 +210,6 @@ nav a:hover {
     flex: 0 0 33.333333%;
     order: 1;
   }
-	
   .main {
     flex: 0 0 66.666667%;
     order: 2;
@@ -208,13 +220,17 @@ nav a:hover {
   .aside {
     flex: 0 0 25%;
     max-width: 25%;
-    order: 1;
+	order: 1;
   }
   .main {
     flex: 0 0 75%;
-    order: 2;
+	order: 2;
   }
 }
+ 
+	  
+
+
 
 /* ЦЕНТРИРОВАНИЕ ТАБЛИЦЫ */
 
@@ -226,6 +242,7 @@ nav a:hover {
   font-family: Verdana, sans-serif;
   color: #2B3140;
   height: 30px;
+  
 }
 
 .container-table {
@@ -241,7 +258,9 @@ padding-bottom: 10px;
   border-style: none;
   border-collapse: collapse;
   color: #2B3140;
-  }
+  
+
+}
 
 .th  {
   border: solid 1px #adadad; 
@@ -249,7 +268,9 @@ padding-bottom: 10px;
   text-align: center;
   background-color: #7E685A;
   color: #ffffff;
+  
 }
+
 
 .td  {
 border: solid 1px #adadad;
@@ -268,20 +289,19 @@ text-align: center;
 
 section {
         display: flex; /*каждый flex-элемент будет занимать одинаковое количество места в flex-контейнере*/
-	width: 98%;
+		width: 98%;
       }
 
-article {
-        padding: 10px;
-        margin: 10px;
-        background: #AFD275;
-	border-radius: 20% 2%;  /*закругляшки*/
-      }
+
+
 
 .container {
 width: 100%; /* Уменьшение ширины контейнера */
 }
 }
+
+
+
 
 /*слайдер*/
 * {
@@ -314,6 +334,7 @@ width: 100%; /* Уменьшение ширины контейнера */
    left: 50%;
    transform: translateX(-50%); /* перемещает элемент горизонтально в 2D-плоскости - влево + вправо 0 не перемещает. */
    display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
+   
 }
 
 
@@ -324,13 +345,14 @@ width: 100%; /* Уменьшение ширины контейнера */
    cursor: pointer; /*Курсор — это указатель, который указывает на ссылку. Как правило, изображение указывающей руки.*/
    background-color: #000;
    opacity: .5;  /*задает непрозрачность элемента */
-   border-radius: 5px;  /*округляет углы внешнего края границы элемента */
-   transition: all 0.4s ease;  /* задержка в ...., прежде чем произойдет...*/
+  border-radius: 5px;  /*округляет углы внешнего края границы элемента */
+  transition: all 0.4s ease;  /* задержка в ...., прежде чем произойдет...*/
 }
 
 .bar:hover {
    opacity: 1; /*задает непрозрачность элемента */
    transform:scale(1.1); /* растягивает по горизонтали + по вертикали*/
+   
 }
 
 input[name="r"] { 
@@ -368,11 +390,12 @@ input[name="r"] {
 
 #r4:checked ~ .s1 {
    margin-left: -75%; 
+
 }
 
 
 .markers li::marker {
-color: #AFD275;
+	color: #AFD275;
 	
 }
 .txt {
@@ -380,10 +403,11 @@ color: #AFD275;
   text-align: left;
   padding-left: 20px;
   color: #2B3140;
+  
 }
 
 .ul-txt {
-padding-top: 10px;
+	padding-top: 10px;
 }
 
 </style>
