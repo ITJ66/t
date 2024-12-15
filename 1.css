@@ -98,6 +98,7 @@ flex-wrap: wrap;
 }
 
 .table1 {
+  margin: 0 auto; /* Центрирование */
   width: auto;
   border-style: none;
   border-collapse: collapse;
