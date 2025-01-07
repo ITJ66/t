@@ -88,6 +88,7 @@ font-family: Verdana, sans-serif;
   width: 100%;
   flex-wrap: wrap;
   /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+	
   
 }
 
@@ -190,6 +191,7 @@ width: 98%; /* Относительная ширина контейнера */
 margin: 0 auto; /* Центрирование */
 font-size: 18px;
 flex-wrap: wrap;
+margin-top: 10px;
 }
 
 .table1 {
