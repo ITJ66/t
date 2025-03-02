@@ -157,10 +157,10 @@ margin-top: 0px;
 	  
 .text {
         max-width: 400px; 
-		height: 130px;
-		padding: 10px;
+	height: 150px;
+	padding: 10px;
         margin: 20px;
-		border-radius: 15% 2%;  /*закругляшки*/
+	border-radius: 15% 2%;  /*закругляшки*/
 		
         background-image: linear-gradient(to right, #75b360, #7fb249, #7fb249);
 }
