@@ -166,7 +166,9 @@ margin-top: 0px;
 }
 
 .text p {
-color: #373e51; font-size: 16px;
+color: #373e51; 
+font-size: 16px;
+padding-bottom: 10px;
 }
 
 .zag-text {
@@ -178,15 +180,13 @@ color: #373e51; font-size: 16px;
 
 /* ТАБЛИЦА */  
 
-
-
 .table {
   font-size: 18px;
   border-style: none;
   border-collapse: collapse;
  
   
-  width: 65%;
+  width: 70%;
   max-width: 1350px;
   margin: 0 auto; /* Центрирование */
   
