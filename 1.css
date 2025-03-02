@@ -379,8 +379,11 @@ article {
 
 
 blockquote {
-	display:none;
-	
+	display:none;	
+}
+
+.left {
+	text-align: left;
 }
 
 tr:hover blockquote {
@@ -418,4 +421,9 @@ tr:hover blockquote {
   text-align: center;
   margin-bottom: 10px;
   /*border: solid #5B6DCD 1px;/* рамка для проверки */  
+}
+
+.box-flex {
+ width: 400px;
+ height: 100%;	
 }
