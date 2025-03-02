@@ -7,6 +7,13 @@ body {
   color: #2B3140;
 }
 
+.fon {
+	background-image: radial-gradient(circle, #ffffff, #e3e3e3, #f5f7f7);
+	width: 100%;
+}
+	
+/*ВЕРХНЕЕ МЕНЮ ----- С ФИКСАЦИЕЙ ПО ГОРИЗОНТАЛИ*/
+
 .header {
 font-family: Verdana;
 font-size: 16px;
@@ -14,30 +21,64 @@ color: #ffffff;
 text-align: center;
 padding: 15px; /* ширина полоски */
 
-background-color: #252c3c; 
+background-image: linear-gradient(to right, #ffffff, #e3e3e3, #ffffff, #e3e3e3);
 }
-
-/*СПИСОК МЕНЮ С ФИКСАЦИЕЙ ПО ГОРИЗОНТАЛИ*/
 
 li {
   text-align: left;
+  font-size: 16px;
 }
 
-	
 nav ul li {
 	display: inline-block; /*отображение элементов списка меню горизонтально, а не вертикально*/
 	}
 nav a {
 	font-size: 16px;   
-	color: #EDEEEE;	
+	color: #2B3140;	
 	line-height: 5px;
 	padding: 0 10px;
 	text-decoration: none;
 }
+
 nav a:hover { 
-    text-decoration: underline;
-	color: #AFD275;
+	color: #447731;
 }
+
+
+/*ФУТЕР ---- СПИСОК МЕНЮ С ФИКСАЦИЕЙ ПО ГОРИЗОНТАЛИ*/
+
+.footer {
+font-family: Verdana;
+color: #ffffff;
+font-size: 16px; 
+text-align: center;
+
+padding: 10px; /* ширина полоски */
+margin-top: 10px;
+
+background-image: linear-gradient(to right, #336620, #7fb249, #7fb249);
+}
+
+.footer-color li {
+  text-align: left;
+}
+	
+.footer-color  nav ul li {
+	display: inline-block; /*отображение элементов списка меню горизонтально, а не вертикально*/
+	}
+.footer-color  nav a {
+	font-size: 16px;   
+	color: #ffffff;	
+	line-height: 5px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+.footer-color nav a:hover { 
+    
+	color: #2B3140;
+}
+
 
 /*КОНТЕНТ*/
 
@@ -70,24 +111,13 @@ p {
 }
 
 .zag {
-  font-size: 21px;
+  font-size: 25px;
   text-align: center;  
   
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 10px;
-}
-
-.footer {
-font-family: Verdana;
-color: #ffffff;
-font-size: 16px; 
-text-align: center;
-
-padding: 20px; /* ширина полоски */
-margin-top: 10px;
-background-color: #7E685A;
 }
 
 .center {
@@ -96,9 +126,8 @@ background-color: #7E685A;
   margin-right: auto;
 }
 
+/* 3 БЛОКА МЕНЮ --- ЛИСТИКИ FLEX */   
 
-
-/* КОНТЕЙНЕР FLEX */  
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -112,20 +141,40 @@ align-items: center; /*выравниванием элементов по поп
 margin-top: 0px;
 }
 
-/* 3 БЛОКА МЕНЮ + FLEX container centrirovanie */  
-
-.articleN {
+.articleN1 {
+    
+	  border-style: solid;
+	  border-width: 10px;
+	  border-style: solid;
+	  border-image: linear-gradient(to right, #90a200, #90a200, #17480f ) 1;
+	  border-radius: 10px 20px;  /*закругляшки*/	
+	max-width: 400px; 
+	height: 140px;
+	padding: 10px;
+	margin: 20px;
+	color: ffffff;        
+}
+	  
+.text {
         max-width: 400px; 
-		height: 180px;
+		height: 130px;
 		padding: 10px;
         margin: 20px;
 		border-radius: 15% 2%;  /*закругляшки*/
-		color: ffffff;
 		
-        background-image: radial-gradient(circle, #AFD275, #9fd04d, #598d01);
+        background-image: linear-gradient(to right, #75b360, #7fb249, #7fb249);
 }
-	  
 
+.text p {
+color: #373e51; font-size: 16px;
+}
+
+.zag-text {
+	padding-top: 10px;  
+	color: #2B3140; 
+	font-size: 21px;
+	text-align: center;
+}
 
 /* ТАБЛИЦА */  
 
@@ -135,8 +184,9 @@ margin-top: 0px;
   font-size: 18px;
   border-style: none;
   border-collapse: collapse;
+ 
   
-  width: 100%;
+  width: 65%;
   max-width: 1350px;
   margin: 0 auto; /* Центрирование */
   
@@ -148,6 +198,7 @@ margin-top: 0px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  
 }
 
 .th  {
@@ -155,13 +206,14 @@ margin-top: 0px;
   color: #2B3140;
   text-align: center;
   color: #ffffff;
-  background-color: #7E685A;
+  
+  background-image: linear-gradient(to right, #75b360, #7fb249, #7fb249);
   
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
-  height: 40px;
+  height: 30px;
 }
 
 .td  {
@@ -173,6 +225,19 @@ padding-top: 5px;
 padding-right: 10px;
 padding-bottom: 5px;
 height: 20px;
+}
+
+.td-color  {
+border: #adadad;
+text-align: center;
+
+padding-left: 10px;
+padding-top: 5px;
+padding-right: 10px;
+padding-bottom: 5px;
+height: 20px;
+
+background-color: #f3f3f3;
 }
 
 
@@ -342,6 +407,7 @@ tr:hover blockquote {
   margin-left: -32px;
   margin-top: -22px;
 }
+
 /* КОНТЕЙНЕР FLEX */  
 .flex {
   display: flex;
@@ -352,5 +418,5 @@ tr:hover blockquote {
   align-content: flex-start;
   text-align: center;
   margin-bottom: 10px;
-  border: solid #5B6DCD 1px;/* рамка для проверки */  
+  /*border: solid #5B6DCD 1px;/* рамка для проверки */  
 }
